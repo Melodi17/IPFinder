@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## Overview
 
-You can use the [editor on GitHub](https://github.com/Melodi17/IPFinder/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+This is a tool for finding devices on your network and it scans and retrieves information using multiple techniques to gather as much data as possible while maintaining speed.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Useage
 
-### Markdown
+Simply starting the app will scan all available UDP ports and conduct an ARP scan and retrive a list back.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+#### Arguments
+Starting with arguments will allow you to customise scanning procedures
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+-h                Argument Help
+-m <int>          Min UDP port, default 1
+-x <int>          Max UDP port, default 65535
+-a <true|false>   ARP enabled (You can't get mac addresses or device manufacturer without this), default true
+-r <true|false>   Hostname resolve enabled (Use DNS to resolve hostname), default true
+-i <true|false>   IP iteration enabled (May take a while, but will return most devices), default false
+-l <string>       Log all data to specified file, default null
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Changelog
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Melodi17/IPFinder/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### To do
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Add IP iteration
