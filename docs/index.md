@@ -2,7 +2,7 @@
 
 This is a tool for finding devices on your network and it scans and retrieves information using multiple techniques to gather as much data as possible while maintaining speed.
 
-### Useage
+### Usage
 
 Simply starting the app will scan all available UDP ports and conduct an ARP scan and retrive a list back.
 
